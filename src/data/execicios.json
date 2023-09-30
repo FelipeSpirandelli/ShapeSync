@@ -1,0 +1,54 @@
+{
+    "exercicios": [
+      {"id": 1, "nome": "Supino", "grupo_muscular": "Peito"},
+      {"id": 2, "nome": "Flexão de Braço", "grupo_muscular": "Peito"},
+      {"id": 3, "nome": "Crossover", "grupo_muscular": "Peito"},
+      {"id": 4, "nome": "Peck Deck", "grupo_muscular": "Peito"},
+      
+      {"id": 5, "nome": "Barra Fixa", "grupo_muscular": "Costas"},
+      {"id": 6, "nome": "Remada Curvada", "grupo_muscular": "Costas"},
+      {"id": 7, "nome": "Puxada Alta", "grupo_muscular": "Costas"},
+      {"id": 8, "nome": "Pull Down", "grupo_muscular": "Costas"},
+      
+      {"id": 9, "nome": "Crunch", "grupo_muscular": "Abdômen"},
+      {"id": 10, "nome": "Prancha", "grupo_muscular": "Abdômen"},
+      {"id": 11, "nome": "Elevação de Pernas", "grupo_muscular": "Abdômen"},
+      {"id": 12, "nome": "Russian Twist", "grupo_muscular": "Abdômen"},
+      
+      {"id": 13, "nome": "Rosca Direta", "grupo_muscular": "Bíceps"},
+      {"id": 14, "nome": "Martelo", "grupo_muscular": "Bíceps"},
+      {"id": 15, "nome": "Scott", "grupo_muscular": "Bíceps"},
+      {"id": 16, "nome": "Rosca Invertida", "grupo_muscular": "Bíceps"},
+      
+      {"id": 17, "nome": "Tríceps Pulley", "grupo_muscular": "Tríceps"},
+      {"id": 18, "nome": "Tríceps na Máquina", "grupo_muscular": "Tríceps"},
+      {"id": 19, "nome": "Fundos", "grupo_muscular": "Tríceps"},
+      {"id": 20, "nome": "Tríceps Testa", "grupo_muscular": "Tríceps"},
+      
+      {"id": 21, "nome": "Rosca de Antebraço", "grupo_muscular": "Antebraço"},
+      {"id": 22, "nome": "Flexão de Punho", "grupo_muscular": "Antebraço"},
+      {"id": 23, "nome": "Supinação de Punho", "grupo_muscular": "Antebraço"},
+      {"id": 24, "nome": "Rosca Inversa", "grupo_muscular": "Antebraço"},
+      
+      {"id": 25, "nome": "Desenvolvimento de Ombros", "grupo_muscular": "Ombro"},
+      {"id": 26, "nome": "Elevação Lateral", "grupo_muscular": "Ombro"},
+      {"id": 27, "nome": "Remada Alta", "grupo_muscular": "Ombro"},
+      {"id": 28, "nome": "Desenvolvimento com Barra", "grupo_muscular": "Ombro"},
+      
+      {"id": 29, "nome": "Agachamento", "grupo_muscular": "Quadríceps"},
+      {"id": 30, "nome": "Leg Press", "grupo_muscular": "Quadríceps"},
+      {"id": 31, "nome": "Cadeira Extensora", "grupo_muscular": "Quadríceps"},
+      {"id": 32, "nome": "Avanço", "grupo_muscular": "Quadríceps"},
+      
+      {"id": 33, "nome": "Flexor deitado", "grupo_muscular": "Posterior de Coxa"},
+      {"id": 34, "nome": "Stiff", "grupo_muscular": "Posterior de Coxa"},
+      {"id": 35, "nome": "Cadeira Flexora", "grupo_muscular": "Posterior de Coxa"},
+      {"id": 36, "nome": "Mesa Flexora", "grupo_muscular": "Posterior de Coxa"},
+      
+      {"id": 37, "nome": "Gêmeos em Pé", "grupo_muscular": "Panturrilha"},
+      {"id": 38, "nome": "Gêmeos Sentado", "grupo_muscular": "Panturrilha"},
+      {"id": 39, "nome": "Elevação de Calcanhar", "grupo_muscular": "Panturrilha"},
+      {"id": 40, "nome": "Cadeira Abdutora", "grupo_muscular": "Panturrilha"}
+    ]
+  }
+  
