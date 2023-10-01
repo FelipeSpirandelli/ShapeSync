@@ -1,0 +1,794 @@
+{
+  "alimentos": [
+    {
+      "nome": "Abacate",
+      "calorias_por_100g": 160,
+      "id": 1
+    },
+    {
+      "nome": "Abacate (cru)",
+      "calorias_por_100g": 160,
+      "id": 2
+    },
+    {
+      "nome": "Abacaxi",
+      "calorias_por_100g": 50,
+      "id": 3
+    },
+    {
+      "nome": "Abacaxi em Calda",
+      "calorias_por_100g": 52,
+      "id": 4
+    },
+    {
+      "nome": "Abóbora (cozida)",
+      "calorias_por_100g": 20,
+      "id": 5
+    },
+    {
+      "nome": "Abóbora (crua)",
+      "calorias_por_100g": 26,
+      "id": 6
+    },
+    {
+      "nome": "Agua de Coco",
+      "calorias_por_100g": 19,
+      "id": 7
+    },
+    {
+      "nome": "Aipo",
+      "calorias_por_100g": 16,
+      "id": 8
+    },
+    {
+      "nome": "Almôndegas",
+      "calorias_por_100g": 333,
+      "id": 9
+    },
+    {
+      "nome": "Ameixa",
+      "calorias_por_100g": 46,
+      "id": 10
+    },
+    {
+      "nome": "Ameixa Seca",
+      "calorias_por_100g": 240,
+      "id": 11
+    },
+    {
+      "nome": "Amendoim",
+      "calorias_por_100g": 567,
+      "id": 12
+    },
+    {
+      "nome": "Amêndoas",
+      "calorias_por_100g": 576,
+      "id": 13
+    },
+    {
+      "nome": "Arroz (cozido)",
+      "calorias_por_100g": 130,
+      "id": 14
+    },
+    {
+      "nome": "Aspargos (cozidos)",
+      "calorias_por_100g": 22,
+      "id": 15
+    },
+    {
+      "nome": "Atum (em água, enlatado)",
+      "calorias_por_100g": 88,
+      "id": 16
+    },
+    {
+      "nome": "Aveia (cozida)",
+      "calorias_por_100g": 71,
+      "id": 17
+    },
+    {
+      "nome": "Bacalhau à Brás",
+      "calorias_por_100g": 130,
+      "id": 18
+    },
+    {
+      "nome": "Bacon (frito)",
+      "calorias_por_100g": 42,
+      "id": 19
+    },
+    {
+      "nome": "Baião de Dois",
+      "calorias_por_100g": 144,
+      "id": 20
+    },
+    {
+      "nome": "Banana",
+      "calorias_por_100g": 89,
+      "id": 21
+    },
+    {
+      "nome": "Batata Doce (cozida)",
+      "calorias_por_100g": 112,
+      "id": 22
+    },
+    {
+      "nome": "Batata Frita",
+      "calorias_por_100g": 536,
+      "id": 23
+    },
+    {
+      "nome": "Beijinho",
+      "calorias_por_100g": 395,
+      "id": 24
+    },
+    {
+      "nome": "Bife de Filé Mignon",
+      "calorias_por_100g": 250,
+      "id": 25
+    },
+    {
+      "nome": "Bife de Fraldinha (grelhado)",
+      "calorias_por_100g": 250,
+      "id": 26
+    },
+    {
+      "nome": "Biscoito de Gengibre",
+      "calorias_por_100g": 444,
+      "id": 27
+    },
+    {
+      "nome": "Bolo de Cenoura",
+      "calorias_por_100g": 367,
+      "id": 28
+    },
+    {
+      "nome": "Bolo de Chocolate",
+      "calorias_por_100g": 371,
+      "id": 29
+    },
+    {
+      "nome": "Brócolis",
+      "calorias_por_100g": 55,
+      "id": 30
+    },
+    {
+      "nome": "Café (preto, sem açúcar)",
+      "calorias_por_100g": 2,
+      "id": 31
+    },
+    {
+      "nome": "Café com Leite",
+      "calorias_por_100g": 43,
+      "id": 32
+    },
+    {
+      "nome": "Caju",
+      "calorias_por_100g": 553,
+      "id": 33
+    },
+    {
+      "nome": "Camarão (cozido)",
+      "calorias_por_100g": 99,
+      "id": 34
+    },
+    {
+      "nome": "Carne de Porco (assada)",
+      "calorias_por_100g": 143,
+      "id": 35
+    },
+    {
+      "nome": "Castanha-do-Pará",
+      "calorias_por_100g": 643,
+      "id": 36
+    },
+    {
+      "nome": "Cebola (crua)",
+      "calorias_por_100g": 40,
+      "id": 37
+    },
+    {
+      "nome": "Cenoura (cozida)",
+      "calorias_por_100g": 41,
+      "id": 38
+    },
+    {
+      "nome": "Cenoura (crua)",
+      "calorias_por_100g": 41,
+      "id": 39
+    },
+    {
+      "nome": "Cenoura (rústica, assada)",
+      "calorias_por_100g": 41,
+      "id": 40
+    },
+    {
+      "nome": "Cereja",
+      "calorias_por_100g": 50,
+      "id": 41
+    },
+    {
+      "nome": "Cerveja",
+      "calorias_por_100g": 43,
+      "id": 42
+    },
+    {
+      "nome": "Cerveja Artesanal",
+      "calorias_por_100g": 45,
+      "id": 43
+    },
+    {
+      "nome": "Cevada (cozida)",
+      "calorias_por_100g": 123,
+      "id": 44
+    },
+    {
+      "nome": "Chocolate Amargo (70 cacau)",
+      "calorias_por_100g": 574,
+      "id": 45
+    },
+    {
+      "nome": "Chocolate Branco",
+      "calorias_por_100g": 539,
+      "id": 46
+    },
+    {
+      "nome": "Chocolate ao Leite",
+      "calorias_por_100g": 535,
+      "id": 47
+    },
+    {
+      "nome": "Chuchu (cozido)",
+      "calorias_por_100g": 19,
+      "id": 48
+    },
+    {
+      "nome": "Churros",
+      "calorias_por_100g": 386,
+      "id": 49
+    },
+    {
+      "nome": "Chá Verde (infusão)",
+      "calorias_por_100g": 1,
+      "id": 50
+    },
+    {
+      "nome": "Coca-Cola",
+      "calorias_por_100g": 42,
+      "id": 51
+    },
+    {
+      "nome": "Coco (ralado)",
+      "calorias_por_100g": 354,
+      "id": 52
+    },
+    {
+      "nome": "Cogumelos (cozidos)",
+      "calorias_por_100g": 22,
+      "id": 53
+    },
+    {
+      "nome": "Couve-Flor (cozida)",
+      "calorias_por_100g": 25,
+      "id": 54
+    },
+    {
+      "nome": "Creme de Avelã (tipo Nutella)",
+      "calorias_por_100g": 539,
+      "id": 55
+    },
+    {
+      "nome": "Creme de Espinafre",
+      "calorias_por_100g": 105,
+      "id": 56
+    },
+    {
+      "nome": "Creme de Leite (sem açúcar)",
+      "calorias_por_100g": 195,
+      "id": 57
+    },
+    {
+      "nome": "Creme de Maracujá",
+      "calorias_por_100g": 90,
+      "id": 58
+    },
+    {
+      "nome": "Creme de Milho",
+      "calorias_por_100g": 118,
+      "id": 59
+    },
+    {
+      "nome": "Creme de Queijo",
+      "calorias_por_100g": 321,
+      "id": 60
+    },
+    {
+      "nome": "Espaguete de Abobrinha",
+      "calorias_por_100g": 17,
+      "id": 61
+    },
+    {
+      "nome": "Esparguete (cozido)",
+      "calorias_por_100g": 158,
+      "id": 62
+    },
+    {
+      "nome": "Espinafre (cozido)",
+      "calorias_por_100g": 23,
+      "id": 63
+    },
+    {
+      "nome": "Fanta Laranja",
+      "calorias_por_100g": 43,
+      "id": 64
+    },
+    {
+      "nome": "Farinha de Aveia",
+      "calorias_por_100g": 389,
+      "id": 65
+    },
+    {
+      "nome": "Farofa",
+      "calorias_por_100g": 471,
+      "id": 66
+    },
+    {
+      "nome": "Feijão Preto (cozido)",
+      "calorias_por_100g": 132,
+      "id": 67
+    },
+    {
+      "nome": "Feijão Verde (cozido)",
+      "calorias_por_100g": 31,
+      "id": 68
+    },
+    {
+      "nome": "Framboesa",
+      "calorias_por_100g": 52,
+      "id": 69
+    },
+    {
+      "nome": "Frango (peito cozido)",
+      "calorias_por_100g": 165,
+      "id": 70
+    },
+    {
+      "nome": "Geleia de Morango",
+      "calorias_por_100g": 260,
+      "id": 71
+    },
+    {
+      "nome": "Goiaba",
+      "calorias_por_100g": 68,
+      "id": 72
+    },
+    {
+      "nome": "Granola",
+      "calorias_por_100g": 471,
+      "id": 73
+    },
+    {
+      "nome": "Grão-de-bico (cozido)",
+      "calorias_por_100g": 164,
+      "id": 74
+    },
+    {
+      "nome": "Guacamole",
+      "calorias_por_100g": 140,
+      "id": 75
+    },
+    {
+      "nome": "Iogurte Grego (sem gordura)",
+      "calorias_por_100g": 59,
+      "id": 76
+    },
+    {
+      "nome": "Iogurte Natural (sem açúcar)",
+      "calorias_por_100g": 59,
+      "id": 77
+    },
+    {
+      "nome": "Ketchup",
+      "calorias_por_100g": 100,
+      "id": 78
+    },
+    {
+      "nome": "Kiwi",
+      "calorias_por_100g": 61,
+      "id": 79
+    },
+    {
+      "nome": "Lagosta (cozida)",
+      "calorias_por_100g": 90,
+      "id": 80
+    },
+    {
+      "nome": "Leite (desnatado)",
+      "calorias_por_100g": 35,
+      "id": 81
+    },
+    {
+      "nome": "Leite Condensado",
+      "calorias_por_100g": 321,
+      "id": 82
+    },
+    {
+      "nome": "Leite de Amêndoas",
+      "calorias_por_100g": 13,
+      "id": 83
+    },
+    {
+      "nome": "Lentilhas (cozidas)",
+      "calorias_por_100g": 116,
+      "id": 84
+    },
+    {
+      "nome": "Macarrão de Trigo Sarraceno (cozido)",
+      "calorias_por_100g": 143,
+      "id": 85
+    },
+    {
+      "nome": "Maionese",
+      "calorias_por_100g": 680,
+      "id": 86
+    },
+    {
+      "nome": "Manga",
+      "calorias_por_100g": 60,
+      "id": 87
+    },
+    {
+      "nome": "Manteiga",
+      "calorias_por_100g": 717,
+      "id": 88
+    },
+    {
+      "nome": "Margarita (coquetel)",
+      "calorias_por_100g": 153,
+      "id": 89
+    },
+    {
+      "nome": "Maçã",
+      "calorias_por_100g": 52,
+      "id": 90
+    },
+    {
+      "nome": "Mel",
+      "calorias_por_100g": 304,
+      "id": 91
+    },
+    {
+      "nome": "Melancia",
+      "calorias_por_100g": 30,
+      "id": 92
+    },
+    {
+      "nome": "Molho Pesto",
+      "calorias_por_100g": 303,
+      "id": 93
+    },
+    {
+      "nome": "Molho de Queijo Cheddar",
+      "calorias_por_100g": 225,
+      "id": 94
+    },
+    {
+      "nome": "Molho de Tomate",
+      "calorias_por_100g": 18,
+      "id": 95
+    },
+    {
+      "nome": "Morango",
+      "calorias_por_100g": 32,
+      "id": 96
+    },
+    {
+      "nome": "Muffin de Blueberry",
+      "calorias_por_100g": 290,
+      "id": 97
+    },
+    {
+      "nome": "Ostra",
+      "calorias_por_100g": 68,
+      "id": 98
+    },
+    {
+      "nome": "Ovo (cozido)",
+      "calorias_por_100g": 155,
+      "id": 99
+    },
+    {
+      "nome": "Peito de Pato (grelhado)",
+      "calorias_por_100g": 337,
+      "id": 100
+    },
+    {
+      "nome": "Pepino",
+      "calorias_por_100g": 16,
+      "id": 101
+    },
+    {
+      "nome": "Pepitas de Abóbora",
+      "calorias_por_100g": 446,
+      "id": 102
+    },
+    {
+      "nome": "Pera",
+      "calorias_por_100g": 57,
+      "id": 103
+    },
+    {
+      "nome": "Picanha (crua)",
+      "calorias_por_100g": 335,
+      "id": 104
+    },
+    {
+      "nome": "Picanha (grelhada)",
+      "calorias_por_100g": 324,
+      "id": 105
+    },
+    {
+      "nome": "Pimenta Vermelha",
+      "calorias_por_100g": 40,
+      "id": 106
+    },
+    {
+      "nome": "Pimentão Amarelo",
+      "calorias_por_100g": 27,
+      "id": 107
+    },
+    {
+      "nome": "Pipoca (sem óleo, sem sal)",
+      "calorias_por_100g": 30,
+      "id": 108
+    },
+    {
+      "nome": "Pistache",
+      "calorias_por_100g": 560,
+      "id": 109
+    },
+    {
+      "nome": "Pizza de Calabresa",
+      "calorias_por_100g": 285,
+      "id": 110
+    },
+    {
+      "nome": "Pizza de Margherita",
+      "calorias_por_100g": 240,
+      "id": 111
+    },
+    {
+      "nome": "Pão Francês",
+      "calorias_por_100g": 299,
+      "id": 112
+    },
+    {
+      "nome": "Pão Integral",
+      "calorias_por_100g": 250,
+      "id": 113
+    },
+    {
+      "nome": "Pão Integral com Grãos",
+      "calorias_por_100g": 247,
+      "id": 114
+    },
+    {
+      "nome": "Pão Sírio",
+      "calorias_por_100g": 260,
+      "id": 115
+    },
+    {
+      "nome": "Pão de Alho",
+      "calorias_por_100g": 308,
+      "id": 116
+    },
+    {
+      "nome": "Pão de Alho com Queijo",
+      "calorias_por_100g": 250,
+      "id": 117
+    },
+    {
+      "nome": "Pão de Batata",
+      "calorias_por_100g": 270,
+      "id": 118
+    },
+    {
+      "nome": "Pão de Centeio",
+      "calorias_por_100g": 259,
+      "id": 119
+    },
+    {
+      "nome": "Pão de Forma Integral",
+      "calorias_por_100g": 247,
+      "id": 120
+    },
+    {
+      "nome": "Pão de Hambúrguer",
+      "calorias_por_100g": 250,
+      "id": 121
+    },
+    {
+      "nome": "Pão de Mel",
+      "calorias_por_100g": 325,
+      "id": 122
+    },
+    {
+      "nome": "Pão de Queijo",
+      "calorias_por_100g": 340,
+      "id": 123
+    },
+    {
+      "nome": "Pão de Queijo de 4 Queijos",
+      "calorias_por_100g": 360,
+      "id": 124
+    },
+    {
+      "nome": "Pêssego",
+      "calorias_por_100g": 39,
+      "id": 125
+    },
+    {
+      "nome": "Pêssego em Calda",
+      "calorias_por_100g": 39,
+      "id": 126
+    },
+    {
+      "nome": "Queijo Cheddar",
+      "calorias_por_100g": 406,
+      "id": 127
+    },
+    {
+      "nome": "Queijo Cottage",
+      "calorias_por_100g": 98,
+      "id": 128
+    },
+    {
+      "nome": "Queijo Emmental",
+      "calorias_por_100g": 381,
+      "id": 129
+    },
+    {
+      "nome": "Queijo Feta",
+      "calorias_por_100g": 264,
+      "id": 130
+    },
+    {
+      "nome": "Queijo Gorgonzola",
+      "calorias_por_100g": 353,
+      "id": 131
+    },
+    {
+      "nome": "Queijo Gouda",
+      "calorias_por_100g": 356,
+      "id": 132
+    },
+    {
+      "nome": "Queijo Mozzarella",
+      "calorias_por_100g": 280,
+      "id": 133
+    },
+    {
+      "nome": "Queijo Parmesão",
+      "calorias_por_100g": 431,
+      "id": 134
+    },
+    {
+      "nome": "Queijo Provolone",
+      "calorias_por_100g": 352,
+      "id": 135
+    },
+    {
+      "nome": "Queijo Roquefort",
+      "calorias_por_100g": 369,
+      "id": 136
+    },
+    {
+      "nome": "Quinoa (cozida)",
+      "calorias_por_100g": 120,
+      "id": 137
+    },
+    {
+      "nome": "Rabanete",
+      "calorias_por_100g": 16,
+      "id": 138
+    },
+    {
+      "nome": "Ratatouille",
+      "calorias_por_100g": 64,
+      "id": 139
+    },
+    {
+      "nome": "Rúcula",
+      "calorias_por_100g": 25,
+      "id": 140
+    },
+    {
+      "nome": "Salmão (enlatado, sem óleo)",
+      "calorias_por_100g": 142,
+      "id": 141
+    },
+    {
+      "nome": "Salmão (grelhado)",
+      "calorias_por_100g": 206,
+      "id": 142
+    },
+    {
+      "nome": "Salsicha de Frango",
+      "calorias_por_100g": 196,
+      "id": 143
+    },
+    {
+      "nome": "Salsicha de Porco",
+      "calorias_por_100g": 301,
+      "id": 144
+    },
+    {
+      "nome": "Sopa de Ervilha",
+      "calorias_por_100g": 81,
+      "id": 145
+    },
+    {
+      "nome": "Sopa de Lentilhas",
+      "calorias_por_100g": 77,
+      "id": 146
+    },
+    {
+      "nome": "Sopa de Tomate",
+      "calorias_por_100g": 74,
+      "id": 147
+    },
+    {
+      "nome": "Sorvete de Baunilha",
+      "calorias_por_100g": 200,
+      "id": 148
+    },
+    {
+      "nome": "Sorvete de Morango",
+      "calorias_por_100g": 207,
+      "id": 149
+    },
+    {
+      "nome": "Suco de Laranja Natural",
+      "calorias_por_100g": 45,
+      "id": 150
+    },
+    {
+      "nome": "Sushi de Salmão",
+      "calorias_por_100g": 130,
+      "id": 151
+    },
+    {
+      "nome": "Tiramisù",
+      "calorias_por_100g": 360,
+      "id": 152
+    },
+    {
+      "nome": "Tofu",
+      "calorias_por_100g": 144,
+      "id": 153
+    },
+    {
+      "nome": "Tofu Defumado",
+      "calorias_por_100g": 144,
+      "id": 154
+    },
+    {
+      "nome": "Tomate",
+      "calorias_por_100g": 18,
+      "id": 155
+    },
+    {
+      "nome": "Tomate Cereja",
+      "calorias_por_100g": 18,
+      "id": 156
+    },
+    {
+      "nome": "Tâmaras Secas",
+      "calorias_por_100g": 282,
+      "id": 157
+    },
+    {
+      "nome": "Uva",
+      "calorias_por_100g": 69,
+      "id": 158
+    }
+  ]
+}

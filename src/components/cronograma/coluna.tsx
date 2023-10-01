@@ -21,7 +21,7 @@ const ColComponent: React.FC<props> = ({ name, lines }) => {
                     return (
                         <div className="flex flex-row items-center justify-center gap-4">
                             {/* Numero da linha */}
-                            <p className="text-azul_escuro font-medium"> Exer. {line + 1}</p>
+                            <p className="text-azul_escuro font-medium"> E {line + 1}</p>
                             {/* Input de exercicio */}
                             <select className="w-1/2 h-10 rounded-full px-4">
                                 {/* Padrão */}
