@@ -23,6 +23,27 @@ model Example {
     @@index([name])
 }
 
+// Exercicios
+model Exercicios {
+    id        Int      @id @default(autoincrement())
+    id_usuario Int
+    id_exercicio Int
+    treino   Int
+    data    DateTime @default(now())
+
+    @@index([id_usuario])
+}
+
+// Alimentos
+model Alimentos {
+    id        Int      @id @default(autoincrement())
+    id_usuario Int
+    id_alimento Int
+    calorias   Int
+
+    @@index([id_usuario])
+}
+
 // Necessary for Next auth
 model Account {
     id                String  @id @default(cuid())
