@@ -26,7 +26,7 @@ model Example {
 // Exercicios
 model Exercicios {
     id        Int      @id @default(autoincrement())
-    id_usuario Int
+    id_usuario String
     id_exercicio Int
     treino   Int
     data    DateTime @default(now())
@@ -37,7 +37,7 @@ model Exercicios {
 // Alimentos
 model Alimentos {
     id        Int      @id @default(autoincrement())
-    id_usuario Int
+    id_usuario String
     id_alimento Int
     calorias   Int
 
