@@ -1,14 +1,31 @@
+"use client";
 import React from 'react';
+import { useSession } from "next-auth/react";
 // import json exercicios
 import exerciciosData from '~/data/execicios.json'
 
+import { api } from "~/utils/api";
+
 type props = {
     name: string,
-    lines: number
+    lines: number,
+    tipo: number,
+
 }
 
 
-const ColComponent: React.FC<props> = ({ name, lines }) => {
+const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
+    
+    // Carregar os exercicios do banco de dados
+    const exerciciosDB = api.exercicios.getExercicosMaisRecentesPorTreino.useQuery({ treino: tipo, id_usuario: "cln7ygmxq0000rlb8hoj05cry"})
+    
+    // se tem algo da console no data    
+    if(exerciciosDB.data){
+        if(exerciciosDB.data.length > 0){
+            console.log(tipo)
+            console.log(exerciciosDB.data)
+        }
+    }
 
     return (
         // Coluna de largura 1/4 do container e altura do que sobrar da tela com itens alinhados ao centro
@@ -51,6 +68,5 @@ const ColComponent: React.FC<props> = ({ name, lines }) => {
 
 // Carregar os dados dos exercicios
 const exercicios = exerciciosData.exercicios
-
 
 export default ColComponent;
