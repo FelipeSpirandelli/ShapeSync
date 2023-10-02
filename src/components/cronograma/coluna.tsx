@@ -87,6 +87,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
             }
 
             // Salvar os dados no banco de dados
+            if(parseInt(exercicio_value)!= 0)
             adicionarDadosMutate.mutate({
                 id_usuario: id_usuario,
                 id_exercicio: parseInt(exercicio_value),
@@ -125,7 +126,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
                                 ))}
                             </select>
                             {/* Input de Peso */}
-                            <input className="w-1/4 h-10 rounded-full px-4" type="number" placeholder="Kg" id={"col"+tipo+"line"+line+"Peso"} name={"col"+tipo+"line"+line+"Peso"} value={pesos ? pesos[line] : 0}/>
+                            <input className="w-1/4 h-10 rounded-full px-4" type="number" placeholder="Kg" id={"col"+tipo+"line"+line+"Peso"} name={"col"+tipo+"line"+line+"Peso"} defaultValue={pesos ? pesos[line] : 0}/>
                             {/* Input de Repetições */}
                         </div>
                     )
