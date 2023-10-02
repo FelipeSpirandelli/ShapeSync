@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import NavbarComponent from '~/components/navbar/navbar';
 import exerciciosData from '~/data/execicios.json';
 import Dropdown from '~/components/dropdown';
 import dynamic from 'next/dynamic';
 import { useSession } from 'next-auth/react';
-import { Exercicios } from '@prisma/client';
 
 import { api } from '~/utils/api';
 
@@ -19,11 +18,11 @@ const BarChart2 = dynamic(() => import('~/components/dash/cronograma_plot'), {
 const Dashboard = () => {
   const [selectedExercicio, setSelectedExercicio] = useState<number>(1);
   const { data: session } = useSession();
-  const id_usuario = session?.user?.id as string;
+  const id_usuario = session?.user?.id as string; /* eslint-disable-line  @typescript-eslint/non-nullable-type-assertion-style */
 
   const plotData = api.exercicios.getUserExerciseId.useQuery({
     id_usuario,
-    id_exercicio: selectedExercicio!,
+    id_exercicio: selectedExercicio,
   }).data;
 
   const selectExercicio = (id: number) => {
