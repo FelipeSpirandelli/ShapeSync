@@ -29,6 +29,7 @@ model Exercicios {
     id_usuario String
     id_exercicio Int
     treino   Int
+    peso    Int
     data    DateTime @default(now())
 
     @@index([id_usuario])

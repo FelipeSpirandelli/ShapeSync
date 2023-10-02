@@ -51,6 +51,7 @@ export const exerciciosRouter = createTRPCRouter({
         id_usuario: z.string(),
         id_exercicio: z.number(),
         data: z.date(),
+        peso: z.number(),
       })
     )
     .query(async ({ ctx, input }) => {
@@ -60,6 +61,7 @@ export const exerciciosRouter = createTRPCRouter({
           id_usuario: input.id_usuario,
           data: input.data,
           id_exercicio: input.id_exercicio,
+          peso: input.peso,
         },
       });
 
