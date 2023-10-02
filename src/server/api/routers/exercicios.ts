@@ -45,7 +45,7 @@ export const exerciciosRouter = createTRPCRouter({
   // Função apagar todos os exercicios de um dado treino de uma data especifica. Para um id_usuario especifico.
   apagarExerciciosPorTreino: protectedProcedure
     .input(z.object({ treino: z.number(), data: z.date(), id_usuario: z.string() }))
-    .query(async ({ ctx, input }) => {
+    .mutation(async ({ ctx, input }) => {
       const exercicios = await ctx.db.exercicios.deleteMany({
         where: {
           treino: input.treino,
@@ -68,7 +68,7 @@ export const exerciciosRouter = createTRPCRouter({
         peso: z.number(),
       })
     )
-    .query(async ({ ctx, input }) => {
+    .mutation(async ({ ctx, input }) => {
       const exercicio = await ctx.db.exercicios.create({
         data: {
           treino: input.treino,
