@@ -4,6 +4,9 @@ import { useSession } from "next-auth/react";
 // import json exercicios
 import exerciciosData from '~/data/execicios.json'
 
+// useEffect
+import { useEffect } from 'react';
+
 import { api } from "~/utils/api";
 import { doc } from 'prettier';
 
@@ -23,6 +26,8 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
     
     // Carregar os exercicios do banco de dados
     const exerciciosDB = api.exercicios.getExercicosMaisRecentesPorTreino.useQuery({ treino: tipo, id_usuario: id_usuario})
+    const apagarDadosMutate = api.exercicios.apagarExerciciosPorTreino.useMutation()
+    const adicionarDadosMutate = api.exercicios.adicionarExercicio.useMutation()
 
     let id_exercicios = undefined as number[] | undefined
     let pesos = undefined as number[] | undefined
@@ -52,22 +57,56 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
         }
     }
 
-    // Função para salvar os dados do formulario ao clicar no botão salvar
+
+    // Quando a variavel salvar mudar
     const saveData = () => {
+
         // Pegar os dados do formulario
         const data_form = document.getElementById("col"+tipo+"Data") as HTMLInputElement
 
-        console.log(data_form.value)
+        const valor_data = data_form.value
+        const data_formatada = new Date(valor_data)
+        data_formatada.setDate(data_formatada.getDate() + 1)
 
-        // Impedir que recarregue a pagina
+        apagarDadosMutate.mutate({
+            id_usuario: id_usuario,
+            data: data_formatada,
+            treino: tipo
+        }) 
+        
+        console.log(data_formatada)
+
+        for (let i = 0; i < lines; i++) {
+            const exercicio = document.getElementById("col"+tipo+"line"+i+"Exer") as HTMLSelectElement
+            const peso = document.getElementById("col"+tipo+"line"+i+"Peso") as HTMLInputElement
+
+            const exercicio_value = exercicio.value
+            const peso_value = peso.value
+
+            let data_padrao = '2021-06-01'
+            let data_p = new Date(data_padrao)
+            // somar um dia
+            data_p.setDate(data_p.getDate() + 1)
+
+            if (valor_data != ''){
+                data_p = data_formatada
+            }
+
+            // Salvar os dados no banco de dados
+            adicionarDadosMutate.mutate({
+                id_usuario: id_usuario,
+                id_exercicio: parseInt(exercicio_value),
+                peso: parseInt(peso_value),
+                data: data_p,
+                treino: tipo
+            })
+        }
     }
+
 
     // Funcao onchange para mudar o valor do input de exercicios
     const changeExercicio = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        // mudar o valor do input de exercicios
-        const exercicio = event.target.value
-        document.getElementById(event.target.id)?.setAttribute('value', exercicio)
-        console.log(event.target.value)
+        
     }
 
     return (
@@ -83,7 +122,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
                             {/* Numero da linha */}
                             <p className="text-azul_escuro font-medium"> E {line + 1}</p>
                             {/* Input de exercicio */}
-                            <select className="w-1/2 h-10 rounded-full px-4" id={"col"+tipo+"line"+line+"Exer"} name={"col"+tipo+"line"+line+"Exer"} value={id_exercicios ? id_exercicios[line] : 0} onChange={changeExercicio}>
+                            <select className="w-1/2 h-10 rounded-full px-4" id={"col"+tipo+"line"+line+"Exer"} name={"col"+tipo+"line"+line+"Exer"} defaultValue={id_exercicios ? id_exercicios[line] : 0} onChange={changeExercicio}>
                                 {/* Padrão */}
                                 <option value={0} key={0}>Sem Exercicio</option>
                                 {/* Mapear exercicios */}
@@ -94,7 +133,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
                                 ))}
                             </select>
                             {/* Input de Peso */}
-                            <input className="w-1/4 h-10 rounded-full px-4" type="number" placeholder="Kg" id={"col"+tipo+"line"+line+"Peso"} name={"col"+tipo+"line"+line+"Peso"} defaultValue={pesos ? pesos[line] : 0}/>
+                            <input className="w-1/4 h-10 rounded-full px-4" type="number" placeholder="Kg" id={"col"+tipo+"line"+line+"Peso"} name={"col"+tipo+"line"+line+"Peso"} value={pesos ? pesos[line] : 0}/>
                             {/* Input de Repetições */}
                         </div>
                     )
