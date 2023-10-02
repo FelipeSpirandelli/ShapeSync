@@ -4,9 +4,6 @@ import { useSession } from "next-auth/react";
 // import json exercicios
 import exerciciosData from '~/data/execicios.json'
 
-// useEffect
-import { useEffect } from 'react';
-
 import { api } from "~/utils/api";
 
 type props = {
@@ -80,7 +77,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
             const exercicio_value = exercicio.value
             const peso_value = peso.value
 
-            let data_padrao = '2021-06-01'
+            const data_padrao = '2021-06-01'
             let data_p = new Date(data_padrao)
             // somar um dia
             data_p.setDate(data_p.getDate() + 1)
@@ -102,9 +99,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
 
 
     // Funcao onchange para mudar o valor do input de exercicios
-    const changeExercicio = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        
-    }
+    
 
     return (
         // Coluna de largura 1/4 do container e altura do que sobrar da tela com itens alinhados ao centro
@@ -119,7 +114,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
                             {/* Numero da linha */}
                             <p className="text-azul_escuro font-medium"> E {line + 1}</p>
                             {/* Input de exercicio */}
-                            <select className="w-1/2 h-10 rounded-full px-4" id={"col"+tipo+"line"+line+"Exer"} name={"col"+tipo+"line"+line+"Exer"} defaultValue={id_exercicios ? id_exercicios[line] : 0} onChange={changeExercicio}>
+                            <select className="w-1/2 h-10 rounded-full px-4" id={"col"+tipo+"line"+line+"Exer"} name={"col"+tipo+"line"+line+"Exer"} defaultValue={id_exercicios ? id_exercicios[line] : 0} >
                                 {/* Padrão */}
                                 <option value={0} key={0}>Sem Exercicio</option>
                                 {/* Mapear exercicios */}
