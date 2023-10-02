@@ -3,13 +3,12 @@ import { z } from "zod";
 import {
   createTRPCRouter,
   protectedProcedure,
-  publicProcedure,
 } from "~/server/api/trpc";
 
 // Rota dos exercícios, acessando o banco de dados
 
 export const exerciciosRouter = createTRPCRouter({
-  
+
   // Função para pegar os 6 ultimos exercícios para um dado treino. Para um id_usuario especifico.
   getExercicosMaisRecentesPorTreino: protectedProcedure
     .input(z.object({ treino: z.number(), id_usuario: z.string() }))
@@ -28,6 +27,21 @@ export const exerciciosRouter = createTRPCRouter({
       return exercicios;
     }),
 
+    getUserExerciseId: protectedProcedure
+      .input(z.object({id_usuario: z.string(), id_exercicio: z.number()}))
+      .query(async({ctx, input})=>{
+        return await ctx.db.exercicios.findMany({
+          where: {
+            id_usuario: input.id_usuario,
+            id_exercicio: input.id_exercicio
+          },
+          orderBy: {
+            data: "asc",
+          },
+          take: 50,
+        })
+      }),
+
   // Função apagar todos os exercicios de um dado treino de uma data especifica. Para um id_usuario especifico.
   apagarExerciciosPorTreino: protectedProcedure
     .input(z.object({ treino: z.number(), data: z.date(), id_usuario: z.string() }))
@@ -42,8 +56,8 @@ export const exerciciosRouter = createTRPCRouter({
 
       return exercicios;
     }),
-  
-    // Função para adicionar um exercicio a um dado treino. Para um id_usuario especifico e uma data especifica.
+
+  // Função para adicionar um exercicio a um dado treino. Para um id_usuario especifico e uma data especifica.
   adicionarExercicio: protectedProcedure
     .input(
       z.object({
@@ -67,5 +81,5 @@ export const exerciciosRouter = createTRPCRouter({
 
       return exercicio;
     }),
-  
+
 });
