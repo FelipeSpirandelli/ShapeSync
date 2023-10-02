@@ -5,7 +5,6 @@ import { useSession } from "next-auth/react";
 import exerciciosData from '~/data/execicios.json'
 
 import { api } from "~/utils/api";
-import { doc } from 'prettier';
 
 type props = {
     name: string,
@@ -19,7 +18,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
 
     // Pegar id do usuario
     const { data: session } = useSession()
-    const id_usuario = session?.user?.id as string
+    const id_usuario = session?.user?.id as string; /* eslint-disable-line  @typescript-eslint/non-nullable-type-assertion-style */
     
     // Carregar os exercicios do banco de dados
     const exerciciosDB = api.exercicios.getExercicosMaisRecentesPorTreino.useQuery({ treino: tipo, id_usuario: id_usuario})
@@ -27,7 +26,6 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
     let id_exercicios = undefined as number[] | undefined
     let pesos = undefined as number[] | undefined
     let data = undefined
-    let dataI = undefined
        
     if(exerciciosDB.data && exerciciosDB.data.length > 0){
 
@@ -39,12 +37,11 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
             pesos = []
 
             // Pegar os exercicios do ultimo treino
-            for (let i = 0; i < exerciciosDB.data.length; i++) {
-                if(exerciciosDB.data[i]){
-                    dataI = exerciciosDB.data[i]
-                    if(dataI?.data.getDay() == data?.getDay()){
-                        id_exercicios.push(dataI.id_exercicio)
-                        pesos.push(dataI.peso)
+            for (const dataI of exerciciosDB.data) {
+                if (dataI) {
+                    if (dataI.data?.getDay() === data?.getDay()) {
+                        id_exercicios.push(dataI.id_exercicio);
+                        pesos.push(dataI.peso);
                     }
                 }
             }
@@ -79,7 +76,7 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
             <form className="flex flex-col items-center justify-center gap-4 px-5">
                 {Array.from(Array(lines).keys()).map((line) => {
                     return (
-                        <div className="flex flex-row items-center justify-center gap-4">
+                        <div className="flex flex-row items-center justify-center gap-4" key={line}>
                             {/* Numero da linha */}
                             <p className="text-azul_escuro font-medium"> E {line + 1}</p>
                             {/* Input de exercicio */}

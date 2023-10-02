@@ -19,7 +19,7 @@ const ColComponent: React.FC<props> = ({ name, lines }) => {
             <form className="flex flex-col items-center justify-center gap-4 px-5">
                 {Array.from(Array(lines).keys()).map((line) => {
                     return (
-                        <div className="flex flex-row items-center justify-center gap-4">
+                        <div className="flex flex-row items-center justify-center gap-4" key={line}>
                             {/* Numero da linha */}
                             <p className="text-azul_escuro font-medium"> {line + 1}</p>
                             {/* Input de alimento */}
@@ -41,7 +41,7 @@ const ColComponent: React.FC<props> = ({ name, lines }) => {
                 <p className="text-3xl text-azul_escuro font-medium py-1">Lanche</p>
                 {Array.from(Array(lines).keys()).map((line) => {
                     return (
-                        <div className="flex flex-row items-center justify-center gap-4">
+                        <div className="flex flex-row items-center justify-center gap-4" key={line}>
                             {/* Numero da linha */}
                             <p className="text-azul_escuro font-medium"> {line + 1}</p>
                             {/* Input de alimento */}
