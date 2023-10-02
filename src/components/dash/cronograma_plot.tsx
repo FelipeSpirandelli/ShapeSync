@@ -1,6 +1,6 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { Exercicios } from '@prisma/client';
+import { type Exercicios } from '@prisma/client';
 
 const BarChart2 = (props: { data: Exercicios[] | null }) => {
   return (
