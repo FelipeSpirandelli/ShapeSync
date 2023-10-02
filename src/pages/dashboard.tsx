@@ -43,11 +43,11 @@ const Dashboard = () => {
         </div>
         <div className="flex flex-row justify-center w-full">
           <div className="m-4 bg-white shadow-lg rounded-lg p-4">
-            <h2 className="text-2xl font-semibold mb-4">Bar Chart 1</h2>
+            <h2 className="text-2xl font-semibold mb-4">Consumo de calorias</h2>
             <BarChart1 />
           </div>
           <div className="m-4 bg-white shadow-lg rounded-lg p-4">
-            <h2 className="text-2xl font-semibold mb-4">Bar Chart 2</h2>
+            <h2 className="text-2xl font-semibold mb-4">Variação Peso</h2>
             {plotData && plotData.length > 0 ? (
               <BarChart2 data={plotData} />
             ) : (
