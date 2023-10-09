@@ -1,106 +1,111 @@
-"use client";
-import React from 'react';
-import { useSession } from "next-auth/react";
-// import json exercicios
-import exerciciosData from '~/data/execicios.json'
+import React, { useState, useEffect } from 'react';
+import { useSession } from 'next-auth/react';
+import exerciciosData from '~/data/execicios.json';
+import { api } from '~/utils/api';
 
-import { api } from "~/utils/api";
+type Props = {
+  name: string;
+  lines: number;
+  tipo: number;
+};
 
-type props = {
-    name: string,
-    lines: number,
-    tipo: number,
+const ColComponent: React.FC<Props> = ({ name, lines, tipo }) => {
+  const { data: session } = useSession();
+  const id_usuario = session?.user?.id as string;
 
-}
+  const [selectedExercicios, setSelectedExercicios] = useState<number[]>(Array.from({ length: lines }, () => 0));
+  const [pesosSelecionados, setPesos] = useState<number[]>(Array.from({ length: lines }, () => 0));
+  const [dataSelecionada, setDataSelecionada] = useState<string | undefined>('');
 
+  const handleExercicioChange = (index: number, value: number) => {
+    const newSelectedExercicios = [...selectedExercicios];
+    newSelectedExercicios[index] = value;
+    setSelectedExercicios(newSelectedExercicios);
+  };
 
-const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
+  const handlePesoChange = (index: number, value: number) => {
+    const newPesos = [...pesosSelecionados];
+    newPesos[index] = value;
+    setPesos(newPesos);
+  };
 
-    // Pegar id do usuario
-    const { data: session } = useSession()
-    const id_usuario = session?.user?.id as string; /* eslint-disable-line  @typescript-eslint/non-nullable-type-assertion-style */
-    
-    // Carregar os exercicios do banco de dados
-    const exerciciosDB = api.exercicios.getExercicosMaisRecentesPorTreino.useQuery({ treino: tipo, id_usuario: id_usuario})
-    const apagarDadosMutate = api.exercicios.apagarExerciciosPorTreino.useMutation()
-    const adicionarDadosMutate = api.exercicios.adicionarExercicio.useMutation()
+  const handleDataChange = (value: string) => {
+    setDataSelecionada(value);
+  };
 
-    let id_exercicios = undefined as number[] | undefined
-    let pesos = undefined as number[] | undefined
-    let data = undefined
-       
-    if(exerciciosDB.data && exerciciosDB.data.length > 0){
+  const exerciciosDB = api.exercicios.getExercicosMaisRecentesPorTreino.useQuery({ treino: tipo, id_usuario: id_usuario });
 
-        // Data do ultimo treino
-        if (exerciciosDB.data[0]){
-            data = exerciciosDB.data[0].data
-
-            id_exercicios = []
-            pesos = []
-
-            // Pegar os exercicios do ultimo treino
-            for (const dataI of exerciciosDB.data) {
-                if (dataI) {
-                    if (dataI.data?.getDay() === data?.getDay()) {
-                        id_exercicios.push(dataI.id_exercicio);
-                        pesos.push(dataI.peso);
-                    }
-                }
-            }
-            console.log(id_exercicios)
+  useEffect(() => {
+    if (exerciciosDB.data && exerciciosDB.data.length > 0) {
+      const latestData = exerciciosDB.data[0];
+      const data = latestData!.data;
+      for (let i = 0; i < exerciciosDB.data.length; i++) {
+        const dadosExercicios = exerciciosDB.data[i];
+        const exercicio = dadosExercicios?.id_exercicio;
+        const peso = dadosExercicios?.peso;
+        if (exercicio) {
+          setSelectedExercicios((prevState) => {
+            const newState = [...prevState];
+            newState[i] = exercicio;
+            return newState;
+          });
         }
-    }
-
-
-    // Quando a variavel salvar mudar
-    const saveData = () => {
-
-        // Pegar os dados do formulario
-        const data_form = document.getElementById("col"+tipo+"Data") as HTMLInputElement
-
-        const valor_data = data_form.value
-        const data_formatada = new Date(valor_data)
-        data_formatada.setDate(data_formatada.getDate() + 1)
-
-        apagarDadosMutate.mutate({
-            id_usuario: id_usuario,
-            data: data_formatada,
-            treino: tipo
-        }) 
-        
-        console.log(data_formatada)
-
-        for (let i = 0; i < lines; i++) {
-            const exercicio = document.getElementById("col"+tipo+"line"+i+"Exer") as HTMLSelectElement
-            const peso = document.getElementById("col"+tipo+"line"+i+"Peso") as HTMLInputElement
-
-            const exercicio_value = exercicio.value
-            const peso_value = peso.value
-
-            const data_padrao = '2021-06-01'
-            let data_p = new Date(data_padrao)
-            // somar um dia
-            data_p.setDate(data_p.getDate() + 1)
-
-            if (valor_data != ''){
-                data_p = data_formatada
-            }
-
-            // Salvar os dados no banco de dados
-            if(parseInt(exercicio_value)!= 0)
-            adicionarDadosMutate.mutate({
-                id_usuario: id_usuario,
-                id_exercicio: parseInt(exercicio_value),
-                peso: parseInt(peso_value),
-                data: data_p,
-                treino: tipo
-            })
+        if (peso) {
+          setPesos((prevState) => {
+            const newState = [...prevState];
+            newState[i] = peso;
+            return newState;
+          });
         }
+      }
+      setDataSelecionada(formatDate(data));
     }
+  }, [id_usuario, exerciciosDB.data]);
 
+  const formatDate = (date: Date) => {
+    return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+  };
 
-    // Funcao onchange para mudar o valor do input de exercicios
-    
+  const apagarDadosMutate = api.exercicios.apagarExerciciosPorTreino.useMutation();
+  const adicionarDadosMutate = api.exercicios.adicionarExercicio.useMutation();
+
+  const saveData = () => {
+    const data_form = document.getElementById(`col${tipo}Data`) as HTMLInputElement;
+    const valor_data = data_form.value;
+    const data_formatada = new Date(valor_data);
+    data_formatada.setDate(data_formatada.getDate() + 1);
+
+    apagarDadosMutate.mutate({
+      id_usuario: id_usuario,
+      data: data_formatada,
+      treino: tipo,
+    });
+
+    for (let i = 0; i < lines; i++) {
+      const exercicio = document.getElementById(`col${tipo}line${i}Exer`) as HTMLSelectElement;
+      const peso = document.getElementById(`col${tipo}line${i}Peso`) as HTMLInputElement;
+
+      const exercicio_value = exercicio.value;
+      const peso_value = peso.value;
+
+      const data_padrao = '2021-06-01';
+      let data_p = new Date(data_padrao);
+      data_p.setDate(data_p.getDate() + 1);
+
+      if (valor_data !== '') {
+        data_p = data_formatada;
+      }
+
+      if (parseInt(exercicio_value) !== 0)
+        adicionarDadosMutate.mutate({
+          id_usuario: id_usuario,
+          id_exercicio: parseInt(exercicio_value),
+          peso: parseInt(peso_value),
+          data: data_p,
+          treino: tipo,
+        });
+    }
+  };
 
     return (
         // Coluna de largura 1/4 do container e altura do que sobrar da tela com itens alinhados ao centro
@@ -115,7 +120,8 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
                             {/* Numero da linha */}
                             <p className="text-azul_escuro font-medium"> E {line + 1}</p>
                             {/* Input de exercicio */}
-                            <select className="w-1/2 h-10 rounded-full px-4" id={"col"+tipo+"line"+line+"Exer"} name={"col"+tipo+"line"+line+"Exer"} defaultValue={id_exercicios ? id_exercicios[line] : 0} >
+                            <select className="w-1/2 h-10 rounded-full px-4" id={"col"+tipo+"line"+line+"Exer"} name={"col"+tipo+"line"+line+"Exer"} 
+                                value={selectedExercicios[line]} onChange={(e) => handleExercicioChange(line, parseInt(e.target.value))}>
                                 {/* Padrão */}
                                 <option value={0} key={0}>Sem Exercicio</option>
                                 {/* Mapear exercicios */}
@@ -126,19 +132,16 @@ const ColComponent: React.FC<props> = ({ name, lines, tipo }) => {
                                 ))}
                             </select>
                             {/* Input de Peso */}
-                            <input className="w-1/4 h-10 rounded-full px-4" type="number" placeholder="Kg" id={"col"+tipo+"line"+line+"Peso"} name={"col"+tipo+"line"+line+"Peso"} defaultValue={pesos ? pesos[line] : 0}/>
+                            <input className="w-1/4 h-10 rounded-full px-4" type="number" placeholder="Kg" id={"col"+tipo+"line"+line+"Peso"} name={"col"+tipo+"line"+line+"Peso"} 
+                                value={pesosSelecionados[line]} onChange={(e) => handlePesoChange(line, parseInt(e.target.value))}/>
                             {/* Input de Repetições */}
                         </div>
                     )
                 })}
                 <div className="flex flex-row items-center justify-center gap-4 w-full">
                     {/* Input de Data */}
-                    <input className="w-1/2 h-10 rounded-full px-4" type="date" placeholder="Data" id={"col"+tipo+"Data"} name={"col"+tipo+"Data"} defaultValue={
-                                                                                                                                                    data
-                                                                                                                                                    ? `${data.getFullYear()}-${
-                                                                                                                                                        (data.getMonth() + 1).toString().padStart(2, '0')
-                                                                                                                                                        }-${data.getDate().toString().padStart(2, '0')}`
-                                                                                                                                                    : ''}/>
+                    <input className="w-1/2 h-10 rounded-full px-4" type="date" placeholder="Data" id={"col"+tipo+"Data"} name={"col"+tipo+"Data"} 
+                        value={dataSelecionada} onChange={(e) => handleDataChange(e.target.value)}/>
                     {/* Botão Salvar */}
                     <button className="w-1/2 h-10 rounded-full px-4 bg-azul_escuro text-white font-medium" type="button" onClick={saveData}>Salvar</button>
                 </div>
