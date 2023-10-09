@@ -41,6 +41,7 @@ model Alimentos {
     id_usuario String
     id_alimento Int
     peso   Int
+    tipo   Int
 
     @@index([id_usuario])
 }
