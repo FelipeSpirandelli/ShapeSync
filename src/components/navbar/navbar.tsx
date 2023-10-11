@@ -15,7 +15,7 @@ const NavbarComponent: React.FC = () => {
 
     return (
         <nav className="bg-azul_escuro text-red p-4">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <Link href="/">
                     <Image src="/logo_com_texto.svg" alt="logo" width={200} height={50} />
                 </Link>

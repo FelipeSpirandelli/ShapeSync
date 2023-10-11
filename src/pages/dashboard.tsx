@@ -33,26 +33,28 @@ const Dashboard = () => {
 
   return (
     <>
-      <NavbarComponent />
-      <div className="flex flex-col items-center justify-center h-screen">
-        <div className="bg-white shadow-lg rounded-lg p-4 w-full max-w-4xl mb-4">
-          <h2 className="text-2xl font-semibold mb-4">Filtro de Exercicício</h2>
-          <div className="flex space-x-4 mb-4">
-            <Dropdown options={exercicios} onSelect={selectExercicio} />
+      <div className="min-h-screen bg-gray-100 gap-1">
+        <NavbarComponent />
+        <div className="flex flex-col items-center justify-center mt-8">
+          <div className="bg-white shadow-lg rounded-lg p-4 mb-4 w-1/2 min-w-fit flex flex-col justify-center items-center">
+            <h2 className="text-2xl font-semibold mb-4">Filtro de Exercicício</h2>
+            <div className="flex space-x-4 mb-4">
+              <Dropdown options={exercicios} onSelect={selectExercicio} />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-row justify-center w-full">
-          <div className="m-4 bg-white shadow-lg rounded-lg p-4">
-            <h2 className="text-2xl font-semibold mb-4">Consumo de calorias</h2>
-            <BarChart1 />
-          </div>
-          <div className="m-4 bg-white shadow-lg rounded-lg p-4">
-            <h2 className="text-2xl font-semibold mb-4">Variação Peso</h2>
-            {plotData && plotData.length > 0 ? (
-              <BarChart2 data={plotData} />
-            ) : (
-              <h1>Nenhum exercicio feito</h1>
-            )}
+          <div className="flex flex-col md:flex-row justify-center items-center w-full">
+            <div className="m-4 bg-white shadow-lg rounded-lg p-4">
+              <h2 className="text-2xl font-semibold mb-4">Consumo de calorias</h2>
+              <BarChart1 />
+            </div>
+            <div className="m-4 bg-white shadow-lg rounded-lg p-4">
+              <h2 className="text-2xl font-semibold mb-4">Variação Peso</h2>
+              {plotData && plotData.length > 0 ? (
+                <BarChart2 data={plotData} />
+              ) : (
+                <h1>Nenhum exercicio feito</h1>
+              )}
+            </div>
           </div>
         </div>
       </div>

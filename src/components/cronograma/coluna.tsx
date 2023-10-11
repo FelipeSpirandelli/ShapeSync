@@ -109,9 +109,9 @@ const ColComponent: React.FC<Props> = ({ name, lines, tipo }) => {
 
     return (
         // Coluna de largura 1/4 do container e altura do que sobrar da tela com itens alinhados ao centro
-        <div className="w-1/4 h-full flex flex-col items-center justify-center gap-4">
+        <div className="w-full md:w-1/4 h-full flex flex-col items-center justify-center gap-4">
             {/* Nome da coluna cor 264653 */}
-            <p className="text-3xl text-azul_escuro font-medium py-1">{name}</p>
+            <p className="w-fit text-3xl text-azul_escuro font-medium py-1">{name}</p>
             {/* Começar formulario */}
             <form className="flex flex-col items-center justify-center gap-4 px-5">
                 {Array.from(Array(lines).keys()).map((line) => {

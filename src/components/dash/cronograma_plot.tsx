@@ -6,7 +6,7 @@ const BarChart2 = (props: { data: Exercicios[] | null }) => {
   return (
     <>
       {props.data && (
-        <BarChart width={400} height={300} data={props.data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+        <BarChart width={360} height={300} data={props.data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="data" />
           <YAxis />

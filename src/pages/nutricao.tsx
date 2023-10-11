@@ -148,7 +148,6 @@ export default function Home() {
     apagarDadosMutate.mutate({
       id_usuario: id_usuario,
     });
-    console.log(cafeAlimentos);
     // Salvar todos os dados
     for(const i in cafeAlimentos) {
       const alimento = cafeAlimentos[i];
@@ -232,7 +231,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-4">
             <h1 className="text-center text-5xl font-medium my-8">Nutrição</h1>
             {/* container com altura que sobrar */}
-            <div className="container grid grid-cols-3 items-center justify-center gap-2">
+            <div className="container grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2">
                 <ColComponent name="Café"   lines={5} tipo={1} setValues={setCafeValues}/>
                 <ColComponent name="Almoço" lines={5} tipo={3} setValues={setAlmocoValues}/>
                 <ColComponent name="Jantar" lines={5} tipo={5} setValues={setJantarValues}/>
@@ -240,7 +239,7 @@ export default function Home() {
                 <ColComponent name="Lanche" lines={3} tipo={4} setValues={setLanche2Values}/>            
                 <ColComponent name="Ceia"   lines={3} tipo={6} setValues={setCeiaValues}/>
             </div>
-            <div className="flex flex-row items-center justify-center gap-4 w-full my-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full my-4">
                 <p>Calorias:</p>
                 <input className="w-1/8 h-10 rounded-full px-4" type="number" placeholder="Calorias" disabled value={calorias}/>
                 <button className="w-1/4 h-10 rounded-full px-4 bg-azul_escuro text-white font-medium" onClick={salvarDados}>Salvar</button>
