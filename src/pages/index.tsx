@@ -12,11 +12,11 @@ export default function Home() {
     <>
       <NavbarComponent />
 
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-20">
-        <div className="max-w-3xl p-6 bg-white rounded-lg shadow-lg">
+      <div className="h-screen bg-gray-100 flex items-center justify-center p-20">
+        <div className="max-w-4xl flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg">
           <h1 className="text-4xl font-bold mb-4">Transformando Vidas Através da Coleta de Dados</h1>
           <p className="text-gray-600 mb-8">
-            Bem-vindo ao nosso site! Aqui, nós acreditamos que a coleta de dados de treinos e dieta pode mudar a vida das pessoas de maneiras incríveis.
+            Bem-vindo ao nosso site! Tenha um impacto positivo na sua vida Fit astravés da coleta de dados.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -60,9 +60,9 @@ function AuthShowcase() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div className="flex flex-col items-center justify-center gap-4 p-5">
       <p className="text-center text-2xl">
-        {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
+        {sessionData && <span>Você fez login como {sessionData.user?.name}</span>}
         {secretMessage && <span> - {secretMessage}</span>}
       </p>
       <button
