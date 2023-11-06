@@ -21,6 +21,19 @@ export const nutricaoRouter = createTRPCRouter({
       });
       return alimentos;
     }),
+  
+  /// Função para pegar todos os alimentos de um usuario.
+  getAlimentos: protectedProcedure
+    .input(z.object({ id_usuario: z.string() }))
+    .query(async ({ ctx, input }) => {
+      const alimentos = await ctx.db.alimentos.findMany({
+        where: {
+          id_usuario: input.id_usuario,
+        },
+      });
+
+      return alimentos;
+    }),
 
 
   // Função apagar todos os alimentos de um usuario.

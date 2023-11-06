@@ -25,6 +25,8 @@ const Dashboard = () => {
     id_exercicio: selectedExercicio,
   }).data;
 
+  const barData = api.nutricao.getAlimentos.useQuery({ id_usuario: id_usuario }).data;
+
   const selectExercicio = (id: number) => {
     setSelectedExercicio(id);
   };
@@ -44,11 +46,15 @@ const Dashboard = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center w-full">
             <div className="m-4 bg-white shadow-lg rounded-lg p-4">
-              <h2 className="text-2xl font-semibold mb-4">Consumo de calorias</h2>
-              <BarChart1 />
+              <h2 className="text-2xl font-semibold mb-4">Macros e Calorias</h2>
+              {barData && barData.length > 0 ? (
+                <BarChart1 data={barData} />
+              ) : (
+                <h1>Nenhum alimento adicionado</h1>
+              )}
             </div>
             <div className="m-4 bg-white shadow-lg rounded-lg p-4">
-              <h2 className="text-2xl font-semibold mb-4">Variação Peso</h2>
+              <h2 className="text-2xl font-semibold mb-4">Progressão de Carga</h2>
               {plotData && plotData.length > 0 ? (
                 <BarChart2 data={plotData} />
               ) : (

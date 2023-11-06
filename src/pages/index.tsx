@@ -65,11 +65,11 @@ function AuthShowcase() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 p-5">
       <p className="text-center text-2xl">
-        {sessionData && <span>Você fez login como {sessionData.user?.name}</span>}
+        {sessionData && <span>Você fez login como {sessionData.user?.name?.split(" ")[0]}</span>}
         {/* {secretMessage && <span> - {secretMessage}</span>} */}
       </p>
       <button
-        className="rounded-full px-10 py-3 font-semibold no-underline transition"
+        className="rounded-full px-10 py-3 font-semibold no-underline transition bg-azul_escuro text-white hover:bg-blue-800"
         onClick={sessionData ? () => void signOut() : () => void signIn()}
       >
         {sessionData ? "Sign out" : "Sign in"}

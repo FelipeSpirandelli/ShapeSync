@@ -136,7 +136,7 @@ export default function Home() {
       }
     }
     // Calorias totais
-    const caloriasTotais = caloriasCafe + caloriasAlmoco + caloriasJantar + caloriasLanche1 + caloriasLanche2 + caloriasCeia;
+    const caloriasTotais = Math.round(caloriasCafe + caloriasAlmoco + caloriasJantar + caloriasLanche1 + caloriasLanche2 + caloriasCeia);
     setCalorias(caloriasTotais);
   }, [cafeAlimentos, almocoAlimentos, jantarAlimentos, lanche1Alimentos, lanche2Alimentos, ceiaAlimentos, cafePesos, almocoPesos, jantarPesos, lanche1Pesos, lanche2Pesos, ceiaPesos]);
 

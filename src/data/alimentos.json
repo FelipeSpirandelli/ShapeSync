@@ -3,791 +3,1265 @@
     {
       "nome": "Abacate",
       "calorias_por_100g": 160,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 1
     },
     {
       "nome": "Abacate (cru)",
       "calorias_por_100g": 160,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 2
     },
     {
       "nome": "Abacaxi",
       "calorias_por_100g": 50,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 3
     },
     {
       "nome": "Abacaxi em Calda",
       "calorias_por_100g": 52,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 4
     },
     {
       "nome": "Abóbora (cozida)",
       "calorias_por_100g": 20,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 5
     },
     {
       "nome": "Abóbora (crua)",
       "calorias_por_100g": 26,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 6
     },
     {
       "nome": "Agua de Coco",
       "calorias_por_100g": 19,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 7
     },
     {
       "nome": "Aipo",
       "calorias_por_100g": 16,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 8
     },
     {
       "nome": "Almôndegas",
       "calorias_por_100g": 333,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 9
     },
     {
       "nome": "Ameixa",
       "calorias_por_100g": 46,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 10
     },
     {
       "nome": "Ameixa Seca",
       "calorias_por_100g": 240,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 11
     },
     {
       "nome": "Amendoim",
       "calorias_por_100g": 567,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 12
     },
     {
       "nome": "Amêndoas",
       "calorias_por_100g": 576,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 13
     },
     {
       "nome": "Arroz (cozido)",
       "calorias_por_100g": 130,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 14
     },
     {
       "nome": "Aspargos (cozidos)",
       "calorias_por_100g": 22,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 15
     },
     {
       "nome": "Atum (em água, enlatado)",
       "calorias_por_100g": 88,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 16
     },
     {
       "nome": "Aveia (cozida)",
       "calorias_por_100g": 71,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 17
     },
     {
       "nome": "Bacalhau à Brás",
       "calorias_por_100g": 130,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 18
     },
     {
       "nome": "Bacon (frito)",
       "calorias_por_100g": 42,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 19
     },
     {
       "nome": "Baião de Dois",
       "calorias_por_100g": 144,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 20
     },
     {
       "nome": "Banana",
       "calorias_por_100g": 89,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 21
     },
     {
       "nome": "Batata Doce (cozida)",
       "calorias_por_100g": 112,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 22
     },
     {
       "nome": "Batata Frita",
       "calorias_por_100g": 536,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 23
     },
     {
       "nome": "Beijinho",
       "calorias_por_100g": 395,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 24
     },
     {
       "nome": "Bife de Filé Mignon",
       "calorias_por_100g": 250,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 25
     },
     {
       "nome": "Bife de Fraldinha (grelhado)",
       "calorias_por_100g": 250,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 26
     },
     {
       "nome": "Biscoito de Gengibre",
       "calorias_por_100g": 444,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 27
     },
     {
       "nome": "Bolo de Cenoura",
       "calorias_por_100g": 367,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 28
     },
     {
       "nome": "Bolo de Chocolate",
       "calorias_por_100g": 371,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 29
     },
     {
       "nome": "Brócolis",
       "calorias_por_100g": 55,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 30
     },
     {
       "nome": "Café (preto, sem açúcar)",
       "calorias_por_100g": 2,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 31
     },
     {
       "nome": "Café com Leite",
       "calorias_por_100g": 43,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 32
     },
     {
       "nome": "Caju",
       "calorias_por_100g": 553,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 33
     },
     {
       "nome": "Camarão (cozido)",
       "calorias_por_100g": 99,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 34
     },
     {
       "nome": "Carne de Porco (assada)",
       "calorias_por_100g": 143,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 35
     },
     {
       "nome": "Castanha-do-Pará",
       "calorias_por_100g": 643,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 36
     },
     {
       "nome": "Cebola (crua)",
       "calorias_por_100g": 40,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 37
     },
     {
       "nome": "Cenoura (cozida)",
       "calorias_por_100g": 41,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 38
     },
     {
       "nome": "Cenoura (crua)",
       "calorias_por_100g": 41,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 39
     },
     {
       "nome": "Cenoura (rústica, assada)",
       "calorias_por_100g": 41,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 40
     },
     {
       "nome": "Cereja",
       "calorias_por_100g": 50,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 41
     },
     {
       "nome": "Cerveja",
       "calorias_por_100g": 43,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 42
     },
     {
       "nome": "Cerveja Artesanal",
       "calorias_por_100g": 45,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 43
     },
     {
       "nome": "Cevada (cozida)",
       "calorias_por_100g": 123,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 44
     },
     {
       "nome": "Chocolate Amargo (70 cacau)",
       "calorias_por_100g": 574,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 45
     },
     {
       "nome": "Chocolate Branco",
       "calorias_por_100g": 539,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 46
     },
     {
       "nome": "Chocolate ao Leite",
       "calorias_por_100g": 535,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 47
     },
     {
       "nome": "Chuchu (cozido)",
       "calorias_por_100g": 19,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 48
     },
     {
       "nome": "Churros",
       "calorias_por_100g": 386,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 49
     },
     {
       "nome": "Chá Verde (infusão)",
       "calorias_por_100g": 1,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 50
     },
     {
       "nome": "Coca-Cola",
       "calorias_por_100g": 42,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 51
     },
     {
       "nome": "Coco (ralado)",
       "calorias_por_100g": 354,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 52
     },
     {
       "nome": "Cogumelos (cozidos)",
       "calorias_por_100g": 22,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 53
     },
     {
       "nome": "Couve-Flor (cozida)",
       "calorias_por_100g": 25,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 54
     },
     {
       "nome": "Creme de Avelã (tipo Nutella)",
       "calorias_por_100g": 539,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 55
     },
     {
       "nome": "Creme de Espinafre",
       "calorias_por_100g": 105,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 56
     },
     {
       "nome": "Creme de Leite (sem açúcar)",
       "calorias_por_100g": 195,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 57
     },
     {
       "nome": "Creme de Maracujá",
       "calorias_por_100g": 90,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 58
     },
     {
       "nome": "Creme de Milho",
       "calorias_por_100g": 118,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 59
     },
     {
       "nome": "Creme de Queijo",
       "calorias_por_100g": 321,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 60
     },
     {
       "nome": "Espaguete de Abobrinha",
       "calorias_por_100g": 17,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 61
     },
     {
       "nome": "Esparguete (cozido)",
       "calorias_por_100g": 158,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 62
     },
     {
       "nome": "Espinafre (cozido)",
       "calorias_por_100g": 23,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 63
     },
     {
       "nome": "Fanta Laranja",
       "calorias_por_100g": 43,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 64
     },
     {
       "nome": "Farinha de Aveia",
       "calorias_por_100g": 389,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 65
     },
     {
       "nome": "Farofa",
       "calorias_por_100g": 471,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 66
     },
     {
       "nome": "Feijão Preto (cozido)",
       "calorias_por_100g": 132,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 67
     },
     {
       "nome": "Feijão Verde (cozido)",
       "calorias_por_100g": 31,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 68
     },
     {
       "nome": "Framboesa",
       "calorias_por_100g": 52,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 69
     },
     {
       "nome": "Frango (peito cozido)",
       "calorias_por_100g": 165,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 70
     },
     {
       "nome": "Geleia de Morango",
       "calorias_por_100g": 260,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 71
     },
     {
       "nome": "Goiaba",
       "calorias_por_100g": 68,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 72
     },
     {
       "nome": "Granola",
       "calorias_por_100g": 471,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 73
     },
     {
       "nome": "Grão-de-bico (cozido)",
       "calorias_por_100g": 164,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 74
     },
     {
       "nome": "Guacamole",
       "calorias_por_100g": 140,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 75
     },
     {
       "nome": "Iogurte Grego (sem gordura)",
       "calorias_por_100g": 59,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 76
     },
     {
       "nome": "Iogurte Natural (sem açúcar)",
       "calorias_por_100g": 59,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 77
     },
     {
       "nome": "Ketchup",
       "calorias_por_100g": 100,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 78
     },
     {
       "nome": "Kiwi",
       "calorias_por_100g": 61,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 79
     },
     {
       "nome": "Lagosta (cozida)",
       "calorias_por_100g": 90,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 80
     },
     {
       "nome": "Leite (desnatado)",
       "calorias_por_100g": 35,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 81
     },
     {
       "nome": "Leite Condensado",
       "calorias_por_100g": 321,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 82
     },
     {
       "nome": "Leite de Amêndoas",
       "calorias_por_100g": 13,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 83
     },
     {
       "nome": "Lentilhas (cozidas)",
       "calorias_por_100g": 116,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 84
     },
     {
       "nome": "Macarrão de Trigo Sarraceno (cozido)",
       "calorias_por_100g": 143,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 85
     },
     {
       "nome": "Maionese",
       "calorias_por_100g": 680,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 86
     },
     {
       "nome": "Manga",
       "calorias_por_100g": 60,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 87
     },
     {
       "nome": "Manteiga",
       "calorias_por_100g": 717,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 88
     },
     {
       "nome": "Margarita (coquetel)",
       "calorias_por_100g": 153,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 89
     },
     {
       "nome": "Maçã",
       "calorias_por_100g": 52,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 90
     },
     {
       "nome": "Mel",
       "calorias_por_100g": 304,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 91
     },
     {
       "nome": "Melancia",
       "calorias_por_100g": 30,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 92
     },
     {
       "nome": "Molho Pesto",
       "calorias_por_100g": 303,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 93
     },
     {
       "nome": "Molho de Queijo Cheddar",
       "calorias_por_100g": 225,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 94
     },
     {
       "nome": "Molho de Tomate",
       "calorias_por_100g": 18,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 95
     },
     {
       "nome": "Morango",
       "calorias_por_100g": 32,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 96
     },
     {
       "nome": "Muffin de Blueberry",
       "calorias_por_100g": 290,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 97
     },
     {
       "nome": "Ostra",
       "calorias_por_100g": 68,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 98
     },
     {
       "nome": "Ovo (cozido)",
       "calorias_por_100g": 155,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 99
     },
     {
       "nome": "Peito de Pato (grelhado)",
       "calorias_por_100g": 337,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 100
     },
     {
       "nome": "Pepino",
       "calorias_por_100g": 16,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 101
     },
     {
       "nome": "Pepitas de Abóbora",
       "calorias_por_100g": 446,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 102
     },
     {
       "nome": "Pera",
       "calorias_por_100g": 57,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 103
     },
     {
       "nome": "Picanha (crua)",
       "calorias_por_100g": 335,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 104
     },
     {
       "nome": "Picanha (grelhada)",
       "calorias_por_100g": 324,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 105
     },
     {
       "nome": "Pimenta Vermelha",
       "calorias_por_100g": 40,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 106
     },
     {
       "nome": "Pimentão Amarelo",
       "calorias_por_100g": 27,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 107
     },
     {
       "nome": "Pipoca (sem óleo, sem sal)",
       "calorias_por_100g": 30,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 108
     },
     {
       "nome": "Pistache",
       "calorias_por_100g": 560,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 109
     },
     {
       "nome": "Pizza de Calabresa",
       "calorias_por_100g": 285,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 110
     },
     {
       "nome": "Pizza de Margherita",
       "calorias_por_100g": 240,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 111
     },
     {
       "nome": "Pão Francês",
       "calorias_por_100g": 299,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 112
     },
     {
       "nome": "Pão Integral",
       "calorias_por_100g": 250,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 113
     },
     {
       "nome": "Pão Integral com Grãos",
       "calorias_por_100g": 247,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 114
     },
     {
       "nome": "Pão Sírio",
       "calorias_por_100g": 260,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 115
     },
     {
       "nome": "Pão de Alho",
       "calorias_por_100g": 308,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 116
     },
     {
       "nome": "Pão de Alho com Queijo",
       "calorias_por_100g": 250,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 117
     },
     {
       "nome": "Pão de Batata",
       "calorias_por_100g": 270,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 118
     },
     {
       "nome": "Pão de Centeio",
       "calorias_por_100g": 259,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 119
     },
     {
       "nome": "Pão de Forma Integral",
       "calorias_por_100g": 247,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 120
     },
     {
       "nome": "Pão de Hambúrguer",
       "calorias_por_100g": 250,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 121
     },
     {
       "nome": "Pão de Mel",
       "calorias_por_100g": 325,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 122
     },
     {
       "nome": "Pão de Queijo",
       "calorias_por_100g": 340,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 123
     },
     {
       "nome": "Pão de Queijo de 4 Queijos",
       "calorias_por_100g": 360,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 124
     },
     {
       "nome": "Pêssego",
       "calorias_por_100g": 39,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 125
     },
     {
       "nome": "Pêssego em Calda",
       "calorias_por_100g": 39,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 126
     },
     {
       "nome": "Queijo Cheddar",
       "calorias_por_100g": 406,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 127
     },
     {
       "nome": "Queijo Cottage",
       "calorias_por_100g": 98,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 128
     },
     {
       "nome": "Queijo Emmental",
       "calorias_por_100g": 381,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 129
     },
     {
       "nome": "Queijo Feta",
       "calorias_por_100g": 264,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 130
     },
     {
       "nome": "Queijo Gorgonzola",
       "calorias_por_100g": 353,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 131
     },
     {
       "nome": "Queijo Gouda",
       "calorias_por_100g": 356,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 132
     },
     {
       "nome": "Queijo Mozzarella",
       "calorias_por_100g": 280,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 133
     },
     {
       "nome": "Queijo Parmesão",
       "calorias_por_100g": 431,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 134
     },
     {
       "nome": "Queijo Provolone",
       "calorias_por_100g": 352,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 135
     },
     {
       "nome": "Queijo Roquefort",
       "calorias_por_100g": 369,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 136
     },
     {
       "nome": "Quinoa (cozida)",
       "calorias_por_100g": 120,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 137
     },
     {
       "nome": "Rabanete",
       "calorias_por_100g": 16,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 138
     },
     {
       "nome": "Ratatouille",
       "calorias_por_100g": 64,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 139
     },
     {
       "nome": "Rúcula",
       "calorias_por_100g": 25,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 140
     },
     {
       "nome": "Salmão (enlatado, sem óleo)",
       "calorias_por_100g": 142,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 141
     },
     {
       "nome": "Salmão (grelhado)",
       "calorias_por_100g": 206,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 142
     },
     {
       "nome": "Salsicha de Frango",
       "calorias_por_100g": 196,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 143
     },
     {
       "nome": "Salsicha de Porco",
       "calorias_por_100g": 301,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 144
     },
     {
       "nome": "Sopa de Ervilha",
       "calorias_por_100g": 81,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 145
     },
     {
       "nome": "Sopa de Lentilhas",
       "calorias_por_100g": 77,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 146
     },
     {
       "nome": "Sopa de Tomate",
       "calorias_por_100g": 74,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 147
     },
     {
       "nome": "Sorvete de Baunilha",
       "calorias_por_100g": 200,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 148
     },
     {
       "nome": "Sorvete de Morango",
       "calorias_por_100g": 207,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 149
     },
     {
       "nome": "Suco de Laranja Natural",
       "calorias_por_100g": 45,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 150
     },
     {
       "nome": "Sushi de Salmão",
       "calorias_por_100g": 130,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 151
     },
     {
       "nome": "Tiramisù",
       "calorias_por_100g": 360,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 152
     },
     {
       "nome": "Tofu",
       "calorias_por_100g": 144,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 153
     },
     {
       "nome": "Tofu Defumado",
       "calorias_por_100g": 144,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 154
     },
     {
       "nome": "Tomate",
       "calorias_por_100g": 18,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 155
     },
     {
       "nome": "Tomate Cereja",
       "calorias_por_100g": 18,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 156
     },
     {
       "nome": "Tâmaras Secas",
       "calorias_por_100g": 282,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 157
     },
     {
       "nome": "Uva",
       "calorias_por_100g": 69,
+      "proteina": 1,
+      "gordura": 1,
+      "carboidrato": 1,
       "id": 158
     }
   ]
