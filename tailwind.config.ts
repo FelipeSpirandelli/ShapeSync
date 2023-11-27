@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'azul_escuro': '#264653'
+        'azul_escuro': '#264653',
+        'white': '#FFF'
       }
     },
 

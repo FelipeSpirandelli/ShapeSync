@@ -2,6 +2,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import NavbarComponent from "~/components/navbar/navbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell, faUtensils, faUsers } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
 
 import { api } from "~/utils/api";
 
@@ -46,6 +47,7 @@ export default function Home() {
             </div>
             <div>
               <AuthShowcase />
+
             </div>
           </div>
         </div>
@@ -72,8 +74,18 @@ function AuthShowcase() {
         className="rounded-full px-10 py-3 font-semibold no-underline transition bg-azul_escuro text-white hover:bg-blue-800"
         onClick={sessionData ? () => void signOut() : () => void signIn()}
       >
-        {sessionData ? "Sign out" : "Sign in"}
+        {sessionData ? "Sair" : "Login"}
       </button>
+      {
+        sessionData ? null :
+        <Link
+        className="rounded-full px-10 py-3 font-semibold no-underline transition bg-azul_escuro text-white hover:bg-blue-800"
+        href="/cadastro"
+      >
+        Cadastro
+      </Link>
+      }
+
     </div>
   );
 }
